@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #00b7ff;
+}
+
+/* Heading */
+h4 {
+    font-size: 40px;
+    color: crimson;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Marquee */
+marquee {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: oblique;
+    margin: 10px auto;
+    
+}
+
+/* Form */
+form {
+    background-color:lightgreen;   
+    max-width: 500px;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: lightcyan;
+    box-sizing: border-box;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00b7ff;
+    color: black;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    marquee {
+        font-size: 16px;
+    }
+}
+
+/* Phones (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .brand {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    marquee {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 20px 15px;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
