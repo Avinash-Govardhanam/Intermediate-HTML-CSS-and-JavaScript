@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+      <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <nav class="navbar" >
+        
+        <div class="brand">Menu</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="image.html">Image Gallery</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+        
+        <h4>Booking Form</h4>
+        <marquee scrollamount="15"  direction="left">Kindly fill the below details For Booking</marquee>
+    <form name="myform" onsubmit="return validateform()">
+        <label>Name : </label>
+       <input type="text" required><br><br>
+        
+        <label>Email :</label>
+        <input  type="email" required><br><br>
+
+        <label>Date OF Birth : </label>
+        <input type="date" required> <br><br>
+
+        <label >Gender : </label>
+        <input type="radio" name="radio" value="male" required>
+        <label>Male</label>
+        <input type="radio" name="radio" value="female" required>
+        <label>Female</label><br><br>
+
+        <label>Mobile no : </label>
+        <input type="tel" required><br><br>
+     
+        <input type="submit" value="Submit">
+    </form>    
+<script src="form.js"></script>
+</body>
+</html>
